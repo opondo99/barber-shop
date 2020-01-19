@@ -1,0 +1,27 @@
+.prices {
+    display: grid;
+    place-self: center;
+    min-height: 90vh;
+    min-width: 50vw;
+    background-color: #feb062;
+
+    h1 {
+        min-height: 3rem;
+        margin: 0;
+        padding: 4rem 0 0 0;
+    }
+
+    table {
+        font-family: 'Montserrat', sans-serif;
+        min-height: 55vh;
+        padding: 0 2rem;
+        margin: 0;
+        text-align: start;
+
+        tr {
+            th {
+                text-align: start;
+            }
+        }
+    }
+}

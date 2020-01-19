@@ -1,0 +1,39 @@
+.services {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(15rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  max-width: 100vw;
+  grid-gap: 1rem;
+  padding: 5px;
+  justify-items: center;
+  min-height: 80vh;
+}
+
+.services .card {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'image' 'description';
+  margin: 5px;
+  padding: 0;
+  overflow: hidden;
+}
+
+.services .card img {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: image;
+  min-width: 100px;
+  min-height: 100px;
+  display: -ms-grid;
+  display: grid;
+  place-self: center;
+}
+
+.services .card .description {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: description;
+  height: 100%;
+}
+/*# sourceMappingURL=services.css.map */

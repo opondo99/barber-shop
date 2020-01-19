@@ -1,0 +1,67 @@
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #e7b3b3;
+}
+
+nav .logo {
+  font-family: 'Ibarra Real Nova', serif;
+  font-size: xx-large;
+  color: #242020;
+}
+
+nav .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 50vw;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+nav .links a {
+  font-family: 'Gelasio', serif;
+  text-decoration: none;
+  padding: 2.5rem;
+  color: #4d4141;
+  font-weight: bold;
+}
+
+.jumbotron {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 10vh;
+}
+
+.jumbotron header {
+  min-height: 85vh;
+  background-image: url("../images/men-having-their-haircut-1813272.jpg");
+  background-size: cover;
+}
+
+.jumbotron header .intro {
+  color: #ecdddd;
+  font-size: 7rem;
+  width: 80vw;
+  background-color: #292626;
+  shape-image-threshold: .7;
+  text-align: start;
+  padding: 1rem;
+  -webkit-clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
+}
+/*# sourceMappingURL=navbar.css.map */

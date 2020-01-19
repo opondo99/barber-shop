@@ -1,0 +1,56 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #e7b3b3;
+
+    .logo {
+        font-family: 'Ibarra Real Nova', serif;
+        font-size: xx-large;
+        color: rgb(36, 32, 32);
+    }
+
+    .links {
+        display: flex;
+        min-width: 50vw;
+        justify-content: space-around;
+
+        a {
+            // font-family: 'Ibarra Real Nova', serif;
+            font-family: 'Gelasio', serif;
+            text-decoration: none;
+            padding: 2.5rem;
+            color: rgb(77, 65, 65);
+            font-weight: bold;
+            // font-size: large;
+        }
+        
+    }
+}
+
+.jumbotron {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    min-height: 10vh;
+
+    
+
+    header {
+        min-height: 85vh;
+        background-image: url('../images/men-having-their-haircut-1813272.jpg');
+        background-size: cover;
+
+        .intro {
+            color: rgb(236, 221, 221);
+            font-size: 7rem;
+            width: 80vw;
+            background-color: rgb(41, 38, 38);
+            shape-image-threshold: .7;
+            text-align: start;
+            padding: 1rem;
+            clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
+        }
+
+    }
+}

@@ -1,0 +1,30 @@
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    max-width: 100vw;
+    grid-gap: 1rem;
+    padding: 5px;
+    justify-items: center;
+    min-height: 80vh;
+
+    .card {
+        display: grid;
+        grid-template-areas: 'image' 'description';
+        margin: 5px;
+        padding: 0;
+        overflow: hidden;
+
+        img {
+            grid-area: image;
+            min-width: 100px;
+            min-height: 100px;
+            display: grid;
+            place-self: center;
+        }
+
+        .description {
+            grid-area: description;
+            height: 100%;
+        }
+    }
+}

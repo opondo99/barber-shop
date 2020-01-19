@@ -1,0 +1,21 @@
+.schedule {
+  display: -ms-grid;
+  display: grid;
+  place-self: center;
+  min-height: 90vh;
+  min-width: 50vw;
+  background-color: #3f3b3b;
+  color: #e4cfcf;
+}
+
+.schedule h1 {
+  min-height: 9vh;
+  margin: 0;
+  padding: 4rem 0 0 0;
+}
+
+.schedule table {
+  font-family: 'Montserrat', sans-serif;
+  min-height: 61vh;
+}
+/*# sourceMappingURL=schedule.css.map */
