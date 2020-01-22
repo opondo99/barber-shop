@@ -3,6 +3,8 @@ import Nav from '../navbar/Navbar';
 import Services from '../services/Services';
 import Prices from '../prices/Prices';
 import Schedule from '../schedule/Schedule';
+import Work from '../work/Work';
+import Footer from '../footer/Footer';
 import './home.css';
 
 const Home = () => {
@@ -15,6 +17,8 @@ const Home = () => {
                 <Prices />
                 <Schedule />
             </div>
+            <Work />
+            <Footer />
         </div>
     )
 }
