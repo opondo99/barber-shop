@@ -7,28 +7,27 @@
     margin: 4rem 1rem;
 
     .tabs {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-        grid-gap: 0.5rem;
-        max-width: 100vw;
-        min-height: 85vh;
-        // min-height: 50vh;
-        // width: 20vw;
+        display: flex;
+        // flex-wrap: wrap;
+        flex-direction: row;
+        overflow: scroll;
+        // max-width: 1fr;
+        // display: grid;
+        // grid-template-columns:  repeat(auto-fit, minmax(15rem, 1fr));
+        // max-width: 100vw;
+        // min-height: 80vh;
 
         .tab {
-            width: 100%;
-            // height: 80vh;
-            // margin: auto;
-            // min-height: 50vh;
+            // width: 100%;
+            min-width: 15rem;
             position: relative;
 
             .studio {
                 margin: 2px 0;
-                padding: 4px 0;
+                padding: 2px 0;
             }
 
             img{
-                // height: 100%;
                 width: 100%;
                 margin: 0;
                 background-color: black;

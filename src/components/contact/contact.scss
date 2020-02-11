@@ -1,0 +1,116 @@
+.Contact {
+    padding: 0;
+    margin: 0;
+    margin-top: 15vh;
+    width: 100%;
+    overflow-x: hidden;
+
+    .Email_form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        padding: 0;
+
+        h1 {
+            padding: 0;
+            // margin-top: 15vh;
+            font-size: 2.5rem;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: #3f3b3b;
+            padding: 2rem;
+            margin: 0;
+            border-radius: 1rem;
+
+            .message {
+                min-height: 17vh;
+            }
+
+            textarea {
+                min-height: 2rem;
+                margin: 1rem auto;
+                width: 30vw;
+                border-radius: 0.5rem;
+            }
+
+            .button {
+                min-width: 40%;
+                background: rgb(36, 32, 32);
+                color: white;
+                padding: 0.5rem 0;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                font-size: large;
+                transition: all 0.3s ease-in-out;
+            }
+
+            .button:hover {
+                color: rgb(44, 37, 37);
+                background: #e7b3b3;
+            }
+        }
+    }
+
+    .social-links {
+        display: fixed;
+        bottom: 0;
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            width: 40vw;
+            margin: 2rem auto;
+
+            a {
+                cursor: pointer;
+                outline: none;
+
+                img {
+                    height: 30px;
+                    width: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .Contact {
+        background: #3f3b3b;
+        width: 100vw;
+        min-height: 90vh;
+        margin-top: 10vh;
+        color: white;
+
+        .Email_form {
+
+            form {
+                width: 100;
+                overflow: hidden;
+                background: transparent;
+                padding: 0;
+                margin: 0; 
+
+                textarea {
+                    width: 90vw;
+                    margin: 1rem auto;
+
+                    background: rgb(53, 53, 53);
+                    color: rgb(206, 195, 179);
+                    border: none;
+                    border-radius: 0;                    
+                }
+            }
+        }
+    }
+}

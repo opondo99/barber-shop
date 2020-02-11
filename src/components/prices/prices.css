@@ -24,4 +24,10 @@
 .prices table tr th {
   text-align: start;
 }
+
+@media (max-width: 700px) {
+  .prices {
+    width: 100vw;
+  }
+}
 /*# sourceMappingURL=prices.css.map */

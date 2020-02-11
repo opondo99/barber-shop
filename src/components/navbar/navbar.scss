@@ -1,34 +1,61 @@
-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.nav {
     background-color: #e7b3b3;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100vw;
+    height: 10vh;
 
-    .logo {
-        font-family: 'Ibarra Real Nova', serif;
-        font-size: xx-large;
-        color: rgb(36, 32, 32);
-    }
-
-    .links {
+    nav {
         display: flex;
-        min-width: 50vw;
+        flex-direction: row;
         justify-content: space-around;
+        align-items: center;
+        height: 100%;
 
-        a {
-            // font-family: 'Ibarra Real Nova', serif;
-            font-family: 'Gelasio', serif;
-            text-decoration: none;
-            padding: 2.5rem;
-            color: rgb(77, 65, 65);
-            font-weight: bold;
-            // font-size: large;
+        .logo {
+            font-family: 'Ibarra Real Nova', serif;
+            font-size: xx-large;
+            min-width: 20vw;
+            // padding:  0 1rem;
+
+            a {
+                color: rgb(36, 32, 32);
+                text-decoration: none;
+                padding: 0;
+                margin: 0;
+            }
         }
-        
+
+        .spacer {
+            flex: 1;
+        }
+
+        .burger {
+            display: none;
+        }
+    
+        .links {
+            display: flex;
+            min-width: 50vw;
+            justify-content: space-around;
+    
+            a {
+                // font-family: 'Ibarra Real Nova', serif;
+                font-family: 'Gelasio', serif;
+                text-decoration: none;
+                padding: 0 2.5rem;
+                color: rgb(77, 65, 65);
+                font-weight: bold;
+                // font-size: large;
+            }
+            
+        }
     }
 }
 
 .jumbotron {
+    margin-top: 10vh;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -43,7 +70,7 @@ nav {
 
         .intro {
             color: rgb(236, 221, 221);
-            font-size: 7rem;
+            font-size: 5.5rem;
             width: 80vw;
             background-color: rgb(41, 38, 38);
             shape-image-threshold: .7;
@@ -53,4 +80,49 @@ nav {
         }
 
     }
+}
+
+@media (max-width: 700px) {
+    .nav {
+        height: 10vh;
+        width: 100vw;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        // justify-content: center;
+
+        nav {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            .logo {
+                font-family: 'Ibarra Real Nova', serif;
+                min-width: 20vw;
+                padding: 0 1rem;
+            }
+
+            .spacer {
+                flex: 1;
+            }
+
+            .burger {
+                display: grid;
+                place-self: center;
+                min-height: 6vh;
+                min-width: 10vw;
+                padding: 0 1rem;
+            }
+            .links {
+                display: none;
+            }
+        }
+    }
+
+    .jumbotron {
+        margin-top: 10vh;
+    }
+
 }

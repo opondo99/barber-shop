@@ -1,6 +1,4 @@
 .footer {
-  min-height: 80vh;
-  background-color: #3f3b3b;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13,6 +11,40 @@
       justify-content: space-around;
 }
 
+.footer .social {
+  min-height: 8vh;
+  min-width: 100%;
+  margin: 0;
+  background-color: #e7b3b3;
+}
+
+.footer .social ul {
+  width: 40vw;
+  min-height: 8vh;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .social ul a {
+  list-style: none;
+  cursor: pointer;
+}
+
+.footer .social ul a img {
+  height: 20px;
+}
+
 .footer .bottom {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -23,5 +55,139 @@
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  background-color: #3f3b3b;
+  min-width: 100%;
+  text-align: start;
+  padding: 0;
+  margin: 0;
+  min-height: 40vh;
+}
+
+.footer .bottom .contacts ul {
+  padding: 0;
+}
+
+.footer .bottom .contacts ul li {
+  list-style: none;
+}
+
+.footer .bottom .contacts a {
+  background: #e7b3b3;
+  color: #2e2727;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  -webkit-box-shadow: 2px 2px 2px black;
+          box-shadow: 2px 2px 2px black;
+  cursor: pointer;
+  outline: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.footer .bottom .contacts a:hover {
+  background: #ec2626;
+  color: #ceb6b6;
+}
+
+.footer .bottom .location img {
+  height: 40px;
+}
+
+.footer .bottom .heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.footer .bottom .heading img {
+  height: 30px;
+  display: -ms-grid;
+  display: grid;
+  place-self: center;
+}
+
+@media (max-width: 700px) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100vw;
+  }
+  .footer .bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer .bottom .contacts {
+    width: 100vw;
+    margin: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer .bottom .contacts a {
+    background: #e7b3b3;
+    color: #2e2727;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    -webkit-box-shadow: 2px 2px 2px black;
+            box-shadow: 2px 2px 2px black;
+    cursor: pointer;
+    outline: none;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+  }
+  .footer .bottom .contacts a:hover {
+    background: #ec2626;
+    color: #ceb6b6;
+  }
+  .footer .bottom .location {
+    margin: 2rem;
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 /*# sourceMappingURL=footer.css.map */

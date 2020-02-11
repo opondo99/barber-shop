@@ -23,8 +23,8 @@
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: image;
-  min-width: 100px;
-  min-height: 100px;
+  width: 70px;
+  height: 70px;
   display: -ms-grid;
   display: grid;
   place-self: center;

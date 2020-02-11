@@ -1,17 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './navbar.css';
+import DrawerToggleButton from '../Sidedrawer/DrawerToggle'
 
-const Navigation = () => {
+const Navigation = (props) => {
     return (
+        <div className="nav">
             <nav>
                 <div className="logo">
-                    <p>Hair Works</p>
+                    <Link to='/'>Hair Works</Link>
                 </div>
+                <div className="spacer"/>
                 <div className="burger">
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                    <DrawerToggleButton click={props.drawerClickHandler}/>
                 </div>
                 <div className="links">
                     <Link to='/'>Home</Link>
@@ -20,7 +21,7 @@ const Navigation = () => {
                     <Link to='/contact'>Contact</Link>
                 </div>
             </nav>
-        
+        </div>
     )
 };
 
