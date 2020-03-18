@@ -12,7 +12,7 @@
 
 .about .team-logo {
   height: 40vh;
-  margin: 10vh 0 0 0;
+  margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -113,7 +113,7 @@
 @media (max-width: 700px) {
   .about .team-logo {
     height: 40vh;
-    margin-top: 10vh;
+    margin-top: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

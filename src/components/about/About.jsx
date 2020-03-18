@@ -1,4 +1,9 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import { useIntersection } from 'react-use';
+import gsap from 'gsap';
+import { Power4 } from 'gsap';
+
+
 import Worker1 from './images/photo-of-man-leaning-on-concrete-surface-3180364.jpg';
 import Worker2 from './images/photo-of-man-wearing-grey-vest-3376069.jpg';
 import Worker3 from './images/photo-of-man-wearing-watch-3221005.jpg';
@@ -8,9 +13,41 @@ import Worker6 from './images/woman-wearing-white-turtleneck-top-3290244.jpg';
 import './about.css';
 
 const About = () => {
+    // const sectionRef = useRef(null)
+
+    // const intersection = useIntersection(sectionRef, {
+    //     root: null,
+    //     rootMargin: "40px",
+    //     threshold: 1
+    // });
+
+    // const fadeIn = element => {
+    //     gsap.to(element, 1, {
+    //         opacity: 1,
+    //         y: -30,
+    //         ease: "Power4.Out",
+    //         stagger: {
+    //             amount: 0.3
+    //         }
+    //     });
+    // };
+
+
+    // const fadeOut = element => {
+    //     // gsap.to(element, 1, {
+    //     //     opacity: 0,
+    //     //     y: -20,
+    //     //     ease: "Power4.out"
+    //     // });
+    // };
+
+    // intersection && intersection.intersectionRatio < 1
+    //     ? fadeIn(".fadeIn") : fadeOut(".fadeIn")
+
     return (
         <div className="about">
             <h1 className="team-logo">The Team</h1>
+            <div className="fadeIn">
             <div className="team">
 
                 <div className="worker">
@@ -56,6 +93,10 @@ const About = () => {
                     </div>
                 </div>
             </div>
+            </div>
+            <div className='fadeIn'>
+
+            
             <div className="company">
                 <div className="start">
                     <h1>The Company</h1>
@@ -65,6 +106,8 @@ const About = () => {
                     </p>
                     </div>
                 </div>
+            </div>
+
             </div>
         </div>
     )

@@ -2,9 +2,12 @@
     background-color: #e7b3b3;
     position: fixed;
     top: 0;
-    z-index: 2;
+    z-index: 3;
     width: 100vw;
-    height: 10vh;
+    height: 11vh;
+    overflow-x: hidden;
+    visibility: hidden;
+    
 
     nav {
         display: flex;
@@ -12,12 +15,13 @@
         justify-content: space-around;
         align-items: center;
         height: 100%;
+        width: 100vw;
+        overflow-x: hidden;
 
         .logo {
             font-family: 'Ibarra Real Nova', serif;
             font-size: xx-large;
             min-width: 20vw;
-            // padding:  0 1rem;
 
             a {
                 color: rgb(36, 32, 32);
@@ -41,13 +45,11 @@
             justify-content: space-around;
     
             a {
-                // font-family: 'Ibarra Real Nova', serif;
                 font-family: 'Gelasio', serif;
                 text-decoration: none;
                 padding: 0 2.5rem;
                 color: rgb(77, 65, 65);
                 font-weight: bold;
-                // font-size: large;
             }
             
         }
@@ -55,27 +57,52 @@
 }
 
 .jumbotron {
-    margin-top: 10vh;
+    // margin-top: 7vh;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    min-height: 10vh;
+    min-height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    visibility: hidden;
+    position: relative;
 
-    
 
     header {
-        min-height: 85vh;
+        min-height: 100vh;
         background-image: url('../images/men-having-their-haircut-1813272.jpg');
         background-size: cover;
+        width: 100vw;
+
+
+        .animated {
+            background: #e7b3b3;
+            position: absolute;
+            height: 100vh;
+            width: 1000vw;
+            z-index: 2;
+            left: 100vw;
+            overflow-x: hidden;
+            padding: 0;
+            margin: 0;
+        }
+        
 
         .intro {
             color: rgb(236, 221, 221);
             font-size: 5.5rem;
             width: 80vw;
-            background-color: rgb(41, 38, 38);
-            shape-image-threshold: .7;
+            margin-top: 30vh;
+            height: 30vh;
+            display: flex;
+            align-items: center;
+            opacity: .8;
+            background: rgb(41, 38, 38);
             text-align: start;
             padding: 1rem;
+            font-size: 4rem;
             clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
         }
 
@@ -89,7 +116,7 @@
         box-sizing: border-box;
         display: flex;
         align-items: center;
-        // justify-content: center;
+        min-height: 11vh;
 
         nav {
             width: 100%;
@@ -122,7 +149,25 @@
     }
 
     .jumbotron {
-        margin-top: 10vh;
+        margin: 0;
+        position: relative;
+        min-height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+
+        header {
+            .animated {
+                background: #e7b3b3;
+                position: absolute;
+                height: 100vh;
+                width: 1000vw;
+                z-index: 2;
+                left: 100vw;
+                overflow-x: hidden;
+                padding: 0;
+                margin: 0;
+            }
+        }
     }
 
 }

@@ -2,9 +2,11 @@
   background-color: #e7b3b3;
   position: fixed;
   top: 0;
-  z-index: 2;
+  z-index: 3;
   width: 100vw;
-  height: 10vh;
+  height: 11vh;
+  overflow-x: hidden;
+  visibility: hidden;
 }
 
 .nav nav {
@@ -21,6 +23,8 @@
       -ms-flex-align: center;
           align-items: center;
   height: 100%;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 .nav nav .logo {
@@ -64,7 +68,6 @@
 }
 
 .jumbotron {
-  margin-top: 10vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -74,23 +77,51 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-height: 10vh;
+  min-height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  visibility: hidden;
+  position: relative;
 }
 
 .jumbotron header {
-  min-height: 85vh;
+  min-height: 100vh;
   background-image: url("../images/men-having-their-haircut-1813272.jpg");
   background-size: cover;
+  width: 100vw;
+}
+
+.jumbotron header .animated {
+  background: #e7b3b3;
+  position: absolute;
+  height: 100vh;
+  width: 1000vw;
+  z-index: 2;
+  left: 100vw;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
 }
 
 .jumbotron header .intro {
   color: #ecdddd;
   font-size: 5.5rem;
   width: 80vw;
-  background-color: #292626;
-  shape-image-threshold: .7;
+  margin-top: 30vh;
+  height: 30vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: .8;
+  background: #292626;
   text-align: start;
   padding: 1rem;
+  font-size: 4rem;
   -webkit-clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
           clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
 }
@@ -107,6 +138,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    min-height: 11vh;
   }
   .nav nav {
     width: 100%;
@@ -146,7 +178,22 @@
     display: none;
   }
   .jumbotron {
-    margin-top: 10vh;
+    margin: 0;
+    position: relative;
+    min-height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+  }
+  .jumbotron header .animated {
+    background: #e7b3b3;
+    position: absolute;
+    height: 100vh;
+    width: 1000vw;
+    z-index: 2;
+    left: 100vw;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
   }
 }
 /*# sourceMappingURL=navbar.css.map */

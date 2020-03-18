@@ -16,11 +16,26 @@
     table {
         font-family: 'Montserrat', sans-serif;
         min-height: 61vh;
+        min-width: 40vw;
+        display: flex;
+        justify-content: space-around;
+        color: rgb(228, 207, 207);
+        flex-direction: column;
+        align-items: center;
+
+        tr {
+            min-width: inherit;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
     }
 }
 
 @media (max-width: 700px) {
     .schedule {
         width: 100vw;
+        text-align: center
     }
 }
